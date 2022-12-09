@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Add New Member</title>
+</head>
+<body>
+<h3>Add New Member</h3>
+<form th:object="${newMember}" th:action="@{/addMember}" method='POST'>
+	Name:<input name="name" size="20"> <br />
+	Address:<input name="address" size="20"> <br />
+	City:<input name="city" size="20"> <br />
+	<input name="submit" type="submit" value="submit" />
+</form>
+	<a href="viewAllMembers">View All Books</a>
+</body>
+</html>
