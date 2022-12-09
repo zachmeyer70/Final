@@ -15,6 +15,7 @@
 		<th>Name</th>
 		<th>City</th>
 		<th>Address</th>
+		<th>Status</th>
 	</tr>
 <!-- 	loop through passed in list of members -->
 		<tr th:each="members : ${currentMembers}">
@@ -23,6 +24,7 @@
 			<td th:text="${members.name}" />
 			<td th:text="${members.city}"/>
 			<td th:text="${members.address}" />
+			<td th:text="${members.status}"/>
 		</tr>
 	</table>
 </form>
