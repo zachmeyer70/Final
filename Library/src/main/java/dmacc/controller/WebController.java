@@ -63,7 +63,8 @@ public class WebController {
 		// that list is passed into book sort method
 		BookSort bs = new BookSort(bRepo.findAll());
 		//sorted list is passed back
-		List<Book> b = bs.sort(bRepo.findAll());
+		List<Book> b = bRepo.findAll();
+		b = bs.sort(b);
 		System.out.println(b);
 		// adds to sorted list to model to list out on html page
 		model.addAttribute("b", b);

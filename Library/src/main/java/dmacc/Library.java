@@ -60,8 +60,8 @@ public class Library implements CommandLineRunner{
 		b.setAuthor("Oda");
 		b.setTitle("One Piece");
 		Book b2 = new Book();
-		b2.setAuthor("Dragon Ball");
-		b2.setTitle("Toriyama");
+		b2.setAuthor("Toriyama");
+		b2.setTitle("Dragon Ball");
 		
 		bRepo.save(b); // saving books to database
 		bRepo.save(b2);	// saving members to database
